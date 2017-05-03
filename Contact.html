@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html id="rt">
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Atomium Capsules</title>
+    <link rel='icon' type='image/png' href='./favicologo.png'>
+</head>
+
+<body>
+    <header>
+        <a id="lienacc" href="./index.html"><img src="./logo500.png" id="logo" alt="logo">
+        </a>
+        <div>
+
+            <h1> Atomium Capsules</h1>
+            <blockquote>
+                Your house in your pocket !
+            </blockquote>
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+            <h2 id="labelForm">Send us your impressions</h2>
+
+            <form action="sendToContactAtomium.php" method="post">
+                <fieldset>
+                    <legend>Personal Informations</legend>
+                    <div class="inputaddon">
+                        <label class="inputaddonitem" for="nameu">Surname</label>
+                        <input class="inputaddonfield" id="nameu" name="user_surname" type="text" placeholder="ex : Dupont" required>
+                    </div>
+                    <div class="inputaddon">
+                        <label class="inputaddonitem" for="fnameu">Firstname</label>
+                        <input class="inputaddonfield" id="fnameu" name="user_firstname" type="text" placeholder="ex : Jean" required>
+                    </div>
+
+                    <div class="inputaddon">
+                        <label class="inputaddonitem" for="mailu">Mail</label>
+                        <input class="inputaddonfield" id="mailu" type="email" placeholder="ex : toto@titi.com" required>
+                    </div>
+                    <div class="inputaddon">
+                        <label class="inputaddonitem" for="postal">Postal Code</label>
+                        <input class="inputaddonfield" type="number" id="postal" name="postalcode" min="0" placeholder="34000" required>
+                    </div>
+                    <div class="inputaddon">
+                        <label class="inputaddonitem">Your Country</label>
+                        <select class="inputaddonfield" name="Your Country">
+                            <option value="Algeria">Algeria</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="France" selected>France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="USA">United States of America</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div>
+                    <h4>You heard about us via :</h4>
+                    <input id="c1" type="checkbox" name="Connaissance" value="Facebook">
+                    <label for="c1">Facebook</label>
+                    <input id="c2" type="checkbox" name="Connaissance" value="Twitter">
+                    <label for="c2">Twitter</label>
+                    <input id="c3" type="checkbox" name="Connaissance" value="Un ami">
+                    <label for="c3">A friend</label>
+                    <input id="c4" type="checkbox" name="Connaissance" value="Parhasard">
+                    <label for="c4">By chance</label>
+                    <input id="c5" type="checkbox" name="Connaissance" value="Autre">
+                    <label for="c5">Another way</label>
+                </div>
+
+                <div>
+                    <label for="Date">When do you want to be answered ?</label>
+                    <input id="Date" class="marg" name="Date" type="text" placeholder="dd/mm" required>
+                </div>
+                <div class="marg">
+                    <label for="message">Your message:</label>
+                </div>
+                <textarea id="message" class="marg" name="message" rows="10" placeholder="In any case, this message won't be read."></textarea>
+                <input type="submit" value="Send">
+            </form>
+
+
+
+
+
+        </article>
+
+        <div class="burger">
+            <img src="./burger.png">
+            <div id="menu2">
+                <ul>
+                    <li><a href="./Product.html">Product</a>
+                    </li>
+                    <li><a href="./Contact.html">Contact</a>
+                    </li>
+                    <li><a href="./Equipe.html">Team</a>
+                    </li>
+                    <li><a href="./Presse.html">Press</a>
+                    </li>
+                    <li><a href="./FAQ.html">FAQ</a>
+                    </li>
+                    <li><a href="./Rejoindre.html">Join Us !</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <nav>
+
+            <ul>
+                <li><a href="./Product.html">Product</a>
+                </li>
+                <li><a href="./Contact.html">Contact</a>
+                </li>
+                <li><a href="./Equipe.html">Team</a>
+                </li>
+                <li><a href="./Presse.html">Press</a>
+                </li>
+                <li><a href="./FAQ.html">FAQ</a>
+                </li>
+                <li><a href="./Rejoindre.html">Join Us !</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="./Metier1.html">Job 1</a>
+                            </li>
+                            <li><a href="./Metier2.html">Job 2</a>
+                            </li>
+                            <li><a href="./Metier3.html">Job 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+
+        <aside>
+
+            This is an aside .
+        </aside>
+
+    </main>
+    <footer>
+        <div>
+            <div>
+                <a href="https://fr-fr.facebook.com"><img class="res" src="./fb.png" alt="facebook">
+                </a>
+                <a href="https://twitter.com/"><img class="res" src="./twitter.png" alt="twitter">
+                </a>
+                <a href="http://snapchat.com"><img class="res" src="./snap.png" alt="snapchat">
+                </a>
+                <a href="https://www.instagram.com/"><img class="res" src="./hinsta.png" alt="instagram">
+                </a>
+                <a href="https://plus.google.com/?hl=fr"><img class="res" src="./gg+.png" alt="google+">
+                </a>
+            </div>
+            <div>
+                <a id="top" href="rt">Top of the page</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

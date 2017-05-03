@@ -1,0 +1,284 @@
+.burger {
+    display: none;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    /* pour éviter les marges */
+    
+    text-align: center;
+    /* pour corriger le bug de centrage IE */
+    
+    color: white;
+    padding: 0px;
+    font-family: 'Abel', arial, serif;
+    background: url("./Fondmoinsluminosité.jpeg") center;
+    flex-grow: 1;
+    align-items: stretch;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    display: flex;
+    order: -1;
+    align-items: flex-start;
+    height: 150px;
+    width: 250px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 30px 20px 30px;
+    flex: 1;
+    margin: 0px;
+    border: 2px solid white;
+}
+aside {
+    flex: 0 0 12em;
+}
+#produit {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+#bodym {
+    flex-direction: column;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: #A3A4A8;
+}
+a:hover {
+    color: white;
+}
+#lienacc {
+    margin-right: 50px;
+}
+#logo {
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+}
+#menu {
+    display: flex;
+    margin-bottom: 100px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul > li {
+    list-style: none;
+}
+nav ul > li > a {
+    text-align: left;
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 4px;
+    display: block;
+    color: white;
+    width: 200px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    line-height: 20px;
+}
+#menu ul > li > a {
+    text-align: center;
+}
+nav ul > li > a:hover {
+    background: #54B6A8;
+    padding-left: 20px;
+    width: 130px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+nav .submenu > ul > li > a:hover {
+    background: black;
+}
+.submenu {
+    position: absolute;
+    display: none;
+}
+nav ul > li:hover .submenu {
+    display: block;
+}
+#labelForm {
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+em {
+    font-style: normal;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputaddon {
+    display: flex;
+    margin: 10px 0;
+}
+.inputaddonitem {
+    background-color: #808080;
+    border-right: 4px solid black;
+}
+.inputaddonfield {
+    flex: 1;
+}
+input[type="submit"] {
+    margin: 20px 0;
+    width: 70px;
+    display: block;
+}
+textarea {
+    width: 200px;
+    display: block;
+}
+.marg {
+    margin-top: 20px;
+}
+footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    border-top: 5px solid white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.res {
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+}
+#top {
+    color: white;
+    text-decoration: none;
+    bottom: 0px;
+    padding: 5px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+#top:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+@font-face {
+    font-family: Ogonek;
+    src: URL(Ogonek.ttf);
+}
+@font-face {
+    font-family: Sweet;
+    src: URL(Sweet.ttf);
+}
+h1 {
+    font-family: Ogonek, Sweet, serif;
+}
+blockquote {
+    font-family: Sweet, serif;
+    font-size: 25px;
+}
+.photo {
+    width: auto;
+    height: 200px;
+}
+#Eq {
+    display: flex;
+    flex-direction: column;
+}
+.equipe {
+    display: flex;
+    flex-direction: row;
+}
+.equipe > div {
+    margin: 10px;
+}
+@media (max-width: 768px) {
+    /* media querry, cest pour dire que si l'écran devient plus petit que ça et bien ça applique les propriétés css suivantes */
+    
+    .equipe {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column;
+    }
+    article {
+        border: 0px;
+    }
+    .burger {
+        width: 100%;
+        display: flex;
+        order: -1;
+        align-items: left;
+        height: 150px;
+        width: 220px;
+    }
+    .burger li {
+        display: none;
+        list-style: none;
+    }
+    .burger:hover li {
+        display: block;
+    }
+    .burger li>a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 25px;
+        padding-top: 4px;
+        color: white;
+        width: 200px;
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+        line-height: 20px;
+    }
+    .burger li>a:hover {
+        background: #54B6A8;
+        padding-left: 20px;
+        width: 130px;
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+    .burger img {
+        width: 100px;
+        height: 75px;
+    }
+    .burger:hover img {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+}
